@@ -1,0 +1,11 @@
+.image-container {
+    position: absolute;
+}
+
+.image-container img {
+    display: inherit;
+    height: 70%;
+    width: auto;
+    margin: 15%;
+    display: inline;
+}

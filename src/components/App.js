@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import unsplash from '../api/unsplash'
 import SearchBar from './SearchBar'
 import ImageList from './ImageList'
+import ImageDisplay from './ImageDisplay'
 import './App.css'
 
 class App extends Component {
@@ -29,6 +30,13 @@ class App extends Component {
         })
     }
 
+    closeImage = () => {
+        this.setState({
+            imageIsSelected: false,
+            selectedImage: null
+        })
+    }
+
     render() {
         if (!this.state.imageIsSelected) {
             return (
@@ -39,10 +47,9 @@ class App extends Component {
                 </div>
             )
         } else {
-            const { urls, description } = this.state.selectedImage
+            const image = this.state.selectedImage
             return (
-                <div className="display-image"><img className="ui centered medium image" style={{ display: 'inline-block' }}src={urls.regular} alt={description} /><button>X</button></div>
-                // <div><img className="ui centered medium image" src={urls.full} alt={description} /></div>
+                <ImageDisplay closeImage={this.closeImage} image={image}/>
             )
         }
     }

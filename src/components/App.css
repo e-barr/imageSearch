@@ -17,10 +17,3 @@ body {
     z-index:1;
     border-radius: 2px;
 }
-
-.display-image {
-    background-color: black;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
