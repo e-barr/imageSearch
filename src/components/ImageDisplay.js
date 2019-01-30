@@ -8,12 +8,16 @@ class ImageDisplay extends Component {
             <div className="image-display">
             <button onClick={this.props.closeImage}>X</button>
                 <div className="image-container">
+                <center>
+
                     <a href={urls.regular} target="_blank" rel="noopener noreferrer">
                         <img 
-                            src={urls.regular} 
+                            // src={urls.regular} 
+                            src={urls.regular}
                             alt={description} 
-                        />
+                            />
                     </a>
+                </center>
                 </div>
             </div>
         )

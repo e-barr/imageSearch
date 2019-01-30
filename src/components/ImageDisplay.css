@@ -1,26 +1,29 @@
-.image-display button {
+/* .image-display button {
     position: relative;
     top: 5%;
     right: 5%;
     font-size: 46px;
-    text-align: center;
     background-color: inherit;
     border: none;
     color: white;
-}
+} */
 
-.image-display {
-    padding: 5px;
-    margin-top: 5px;
+.image-display button {
+    position: relative;
+    top: 5px;
+    right: 10px;
+    font-size: 46px;
+    background-color: inherit;
+    border: none;
+    color: white;
+    z-index: 1;
 }
 
 .image-display img {
-    max-width: 750px;
-    max-height: auto;
-    margin: 0 auto;
-    margin-left: 50px;
+    max-height: 600px;
+    max-width: auto;
 }
 
-.image-container {
-    left: 500px;
+.image-display {
+    margin-top: 5px;
 }
