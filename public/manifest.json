@@ -12,9 +12,4 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "homepage": "https://e-barr.github.io/imageSearch/",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
 }
