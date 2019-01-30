@@ -1,11 +1,26 @@
-.image-container {
-    position: absolute;
+.image-display button {
+    position: relative;
+    top: 5%;
+    right: 5%;
+    font-size: 46px;
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    color: white;
 }
 
-.image-container img {
-    display: inherit;
-    height: 70%;
-    width: auto;
-    margin: 15%;
-    display: inline;
+.image-display {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.image-display img {
+    max-width: 750px;
+    max-height: auto;
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
+.image-container {
+    left: 500px;
 }
