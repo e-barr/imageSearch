@@ -28,6 +28,7 @@ class ImageCard extends Component {
                     src={urls.regular}
                     alt={description}
                     ref={this.imageRef}
+                    onClick={(image) => this.props.imageSelected(this.props.image)}
                 />
             </div>
         )

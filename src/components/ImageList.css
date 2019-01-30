@@ -8,3 +8,10 @@
 .image-list img {
     width: 250px;
 }
+
+button {
+    position: relative;
+    bottom: 10px;
+    left: 40%;
+    right: 40%;
+}
